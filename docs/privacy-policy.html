@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Noted — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --brand:     #D97706;
+      --brand-lt:  #FEF3C7;
+      --ink:       #1C1917;
+      --muted:     #78716C;
+      --border:    #E7E5E4;
+      --surface:   #FFFBF5;
+      --card:      #FFFFFF;
+      --radius:    12px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--ink);
+      background: var(--surface);
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--ink);
+      padding: 28px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      background: var(--brand);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-mark svg {
+      width: 24px;
+      height: 24px;
+      fill: white;
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      color: white;
+      letter-spacing: -0.02em;
+    }
+
+    /* ── Layout ── */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      border-left: 4px solid var(--brand);
+      padding-left: 20px;
+      margin-bottom: 48px;
+    }
+
+    .hero h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.25rem;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      font-size: 0.875rem;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .meta strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    section h3::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: var(--brand);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    p { margin-bottom: 12px; color: var(--ink); }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 4px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--brand);
+      font-weight: 600;
+    }
+
+    ul li strong {
+      font-weight: 600;
+    }
+
+    /* ── Highlight card ── */
+    .highlight {
+      background: var(--brand-lt);
+      border: 1px solid #FCD34D;
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin: 20px 0;
+      font-size: 0.9375rem;
+    }
+
+    .highlight strong {
+      color: #92400E;
+      font-weight: 600;
+    }
+
+    /* ── Divider ── */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 40px 0;
+    }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 480px) {
+      .contact-card { grid-template-columns: 1fr; }
+    }
+
+    .contact-item .label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .contact-item .value {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .contact-item a {
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-item a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.875rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-mark">
+      <!-- Pencil / note icon -->
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zm17.71-10.21a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+      </svg>
+    </div>
+    <h1>Noted</h1>
+  </header>
+
+  <main>
+
+    <div class="hero">
+      <h2>Privacy Policy</h2>
+      <p class="meta">
+        Last updated: <strong>May 2025</strong> &nbsp;·&nbsp; Digit Studios
+      </p>
+    </div>
+
+    <p>
+      Noted is a free notes and reminders app for Android, developed by Digit Studios.
+      We are committed to protecting your privacy. This policy explains what data
+      the app collects, how it is used, and your rights.
+    </p>
+
+    <hr/>
+
+    <!-- What we collect -->
+    <section>
+      <h3>Data we collect</h3>
+      <p>
+        Noted is designed to work entirely offline with no accounts required.
+        All data stays on your device.
+      </p>
+      <ul>
+        <li>
+          <strong>Notes and reminders</strong> — stored locally on your device
+          using Hive local database. We never upload your notes to any server.
+        </li>
+        <li>
+          <strong>App settings</strong> — your preferences (theme, snooze duration,
+          swipe mode, categories) are stored locally and never transmitted.
+        </li>
+      </ul>
+    </section>
+
+    <!-- What we don't collect -->
+    <section>
+      <h3>Data we do NOT collect</h3>
+      <ul>
+        <li>We do not collect your name, email address, or any personally identifiable information.</li>
+        <li>We do not track your location.</li>
+        <li>We do not use analytics SDKs or advertising trackers.</li>
+        <li>We do not share any data with third parties for any purpose.</li>
+        <li>We do not store your notes or reminders on any server — everything stays on your device.</li>
+      </ul>
+    </section>
+
+    <!-- Permissions -->
+    <section>
+      <h3>Permissions used</h3>
+      <ul>
+        <li>
+          <strong>Post notifications</strong> — required to deliver reminder
+          notifications at the time you set.
+        </li>
+        <li>
+          <strong>Schedule exact alarms</strong> — required to fire reminders
+          at the precise time you choose, even when the device is in low-power mode.
+        </li>
+        <li>
+          <strong>Receive boot completed</strong> — used to reschedule pending
+          reminders after a device reboot so you never miss an alarm.
+        </li>
+        <li>
+          <strong>Wake lock</strong> — used to briefly wake the device when a
+          reminder fires, ensuring the notification is delivered reliably.
+        </li>
+        <li>
+          <strong>Request ignore battery optimizations</strong> — requested
+          on first launch so the OS does not delay or suppress your reminders.
+          You can revoke this at any time in Android Settings.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Local notifications -->
+    <section>
+      <h3>Local notifications</h3>
+      <p>
+        All reminders in Noted are scheduled locally on your device using
+        Android's AlarmManager. No notification content is ever sent to or
+        processed by an external server. Your note text appears in the
+        notification only on your own device.
+      </p>
+    </section>
+
+    <div class="highlight">
+      <strong>No internet required.</strong> Noted works entirely offline.
+      The app does not make any network requests during normal use.
+    </div>
+
+    <!-- Future versions -->
+    <section>
+      <h3>Future versions</h3>
+      <p>
+        Future versions of Noted may include optional cloud backup or Google
+        AdMob for in-app advertising. When any such feature is added, this
+        privacy policy will be updated to reflect the data collected, and you
+        will be notified via the app's Play Store update notes before the
+        change takes effect.
+      </p>
+    </section>
+
+    <!-- Data retention -->
+    <section>
+      <h3>Data retention and deletion</h3>
+      <p>
+        All notes, reminders, and settings are stored locally on your device.
+        You can delete individual notes at any time within the app.
+        Uninstalling the app permanently removes all locally stored data.
+      </p>
+    </section>
+
+    <!-- Children -->
+    <section>
+      <h3>Children's privacy</h3>
+      <p>
+        Noted is not directed at children under 13. We do not knowingly collect
+        any data from children. If you believe your child has used the app and
+        you have concerns, please contact us at the address below.
+      </p>
+    </section>
+
+    <!-- Changes -->
+    <section>
+      <h3>Changes to this policy</h3>
+      <p>
+        We may update this privacy policy from time to time. When we do, we will
+        update the "Last updated" date at the top of this page and note the
+        changes in the app's Play Store update description. Continued use of
+        the app after changes constitutes acceptance of the updated policy.
+      </p>
+    </section>
+
+    <hr/>
+
+    <!-- Contact -->
+    <section>
+      <h3>Contact us</h3>
+      <div class="contact-card">
+        <div class="contact-item">
+          <div class="label">Developer</div>
+          <div class="value">Digit Studios</div>
+        </div>
+        <div class="contact-item">
+          <div class="label">Email</div>
+          <div class="value">
+            <a href="mailto:digitstudioss@gmail.com">digitstudioss@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="label">App</div>
+          <div class="value">Noted — Notes &amp; Reminders</div>
+        </div>
+        <div class="contact-item">
+          <div class="label">Platform</div>
+          <div class="value">Android (Google Play)</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Digit Studios &nbsp;·&nbsp; Noted — Notes &amp; Reminders
+  </footer>
+
+</body>
+</html>
